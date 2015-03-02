@@ -9,7 +9,7 @@ app.get('/add/:a/:b', function(req, res) {
     var b = parseInt(req.params.b, 10);
     var sum = c.add(a, b);
     console.log(sum);
-    res.status(200).send('The sum = ' + sum);
+    res.status(200).send(a + ' + ' + b ' = ' + sum);
 });
 
 app.listen(process.env.PORT, function() {
