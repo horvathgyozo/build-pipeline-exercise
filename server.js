@@ -12,6 +12,10 @@ app.get('/add/:a/:b', function(req, res) {
     res.status(200).send(a + ' + ' + b + ' = ' + sum);
 });
 
+app.get('/', function (req, res) {
+    res.send('Main page');
+})
+
 app.listen(process.env.PORT, function() {
     console.log('Server started in the port: ', process.env.PORT);
 });
